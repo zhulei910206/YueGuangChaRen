@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <!--加载头部-->
+    <include
+        android:id="@+id/in_main_title"
+        layout="@layout/activity_main_title"></include>
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:id="@+id/ll_main_buttom"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+
+        <LinearLayout
+            android:id="@+id/btn_main_wxb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/selector_web"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"
+                android:textSize="15sp"
+                android:text="月光茶人"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_main_favorable"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/selector_favorable"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"
+                android:textSize="15sp"
+                android:text="优惠"/>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/btn_main_cart"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/selector_cart"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"
+                android:textSize="15sp"
+                android:text="购物车"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_main_my"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/selector_my"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"
+                android:textSize="15sp"
+                android:text="我的"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <!--加载中间区域-->
+    <FrameLayout
+        android:id="@+id/fram_main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/in_main_title"
+        android:layout_above="@id/ll_main_buttom"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/fram_main_content"
+        android:background="#000000"/>
+   <!-- <view
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_below="@id/fram_main_content"
+        android:background="#E3E3E3"/>-->
+
+</RelativeLayout>
